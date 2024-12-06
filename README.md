@@ -11,11 +11,10 @@ Welcome to the **Azure Translation API Documentation**, created by **Shreyash Th
 3. [Authentication](#authentication)  
 4. [Base URL](#base-url)  
 5. [Endpoints](#endpoints)  
-6. [Request & Response Examples](#request--response-examples)  
-7. [Error Handling](#error-handling)  
-8. [Interactive API Testing (Swagger UI)](#interactive-api-testing-swagger-ui)  
-9. [Error Codes](#error-codes)  
-10. [FAQ](#faq)  
+6. [Error Handling](#error-handling)  
+7. [Interactive API Testing (Swagger UI)](#interactive-api-testing-swagger-ui)  
+8. [Error Codes](#error-codes)  
+9. [FAQ](#faq)  
 
 ---
 
@@ -45,14 +44,8 @@ This API uses Azure API keys for authentication. Include the following headers i
 ```http
 Ocp-Apim-Subscription-Key: <your-api-key>
 Ocp-Apim-Subscription-Region: <your-region>
-Content-Type: application/json
+Content-Type: <your-content-type>
 ```
-
-### Example:
-```http
-Authorization: Bearer <your-api-key>
-```
-
 ---
 
 ## Base URL
@@ -141,84 +134,6 @@ http://104.131.126.122:3000/api/v1
       "languages": ["en", "fr", "es", "de", "it", "pt", "nl", "ar", "zh", "ja"]
     }
     ```
-
----
-
-## Request & Response Examples
-
-### Example 1: Translate Single Text
-- **Request:**
-    ```json
-    POST /api/v1/translate/translate-single
-    {
-      "text": "Hello",
-      "toLanguage": "fr"
-    }
-    ```
-- **Response:**
-    ```json
-    {
-      "translations": [
-        {
-          "text": "Bonjour",
-          "to": "fr"
-        }
-      ]
-    }
-    ```
-
-### Example 2: Detect Language
-- **Request:**
-    ```json
-    POST /api/v1/translate/detect-language
-    {
-      "text": "Bonjour"
-    }
-    ```
-- **Response:**
-    ```json
-    {
-      "language": "fr"
-    }
-    ```
-
-### Example 3: Translate Multiple Texts
-- **Request:**
-    ```json
-    POST /api/v1/translate/translate-multiple
-    {
-      "texts": ["Hello", "Good morning"],
-      "toLanguage": "fr"
-    }
-    ```
-- **Response:**
-    ```json
-    {
-      "translations": [
-        {
-          "text": "Bonjour",
-          "to": "fr"
-        },
-        {
-          "text": "Bonjour le matin",
-          "to": "fr"
-        }
-      ]
-    }
-    ```
-
-### Example 4: Supported Languages
-- **Request:**
-    ```json
-    GET /api/v1/translate/supported-languages
-    ```
-- **Response:**
-    ```json
-    {
-      "languages": ["en", "fr", "es", "de", "it", "pt", "nl", "ar", "zh", "ja"]
-    }
-    ```
-
 ---
 
 ## Error Handling
