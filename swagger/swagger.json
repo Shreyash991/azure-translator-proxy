@@ -1,0 +1,92 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "Translation API using Azure Cognitive Services",
+    "version": "1.0.0",
+    "title": "Translation API"
+  },
+  "basePath": "/api/v1",
+  "paths": {
+    "/translate/translate-single": {
+      "post": {
+        "summary": "Translate a single text",
+        "parameters": [
+          {
+            "in": "body",
+            "name": "text",
+            "required": true,
+            "schema": {
+              "type": "object",
+              "properties": {
+                "text": { "type": "string" },
+                "toLanguage": { "type": "string" }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": { "description": "Successful translation" },
+          "400": { "description": "Invalid input" },
+          "500": { "description": "Internal server error" }
+        }
+      }
+    },
+    "/translate/translate-multiple": {
+      "post": {
+        "summary": "Translate multiple texts",
+        "parameters": [
+          {
+            "in": "body",
+            "name": "texts",
+            "required": true,
+            "schema": {
+              "type": "object",
+              "properties": {
+                "texts": { "type": "array", "items": { "type": "string" } },
+                "toLanguage": { "type": "string" }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": { "description": "Successful translations" },
+          "400": { "description": "Invalid input" },
+          "500": { "description": "Internal server error" }
+        }
+      }
+    },
+    "/translate/detect-language": {
+      "post": {
+        "summary": "Detect the language of a text",
+        "parameters": [
+          {
+            "in": "body",
+            "name": "text",
+            "required": true,
+            "schema": {
+              "type": "object",
+              "properties": {
+                "text": { "type": "string" }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": { "description": "Language detected successfully" },
+          "400": { "description": "Invalid input" },
+          "500": { "description": "Internal server error" }
+        }
+      }
+    },
+    "/translate/supported-languages": {
+      "get": {
+        "summary": "List all supported languages",
+        "responses": {
+          "200": { "description": "List of supported languages" },
+          "500": { "description": "Internal server error" }
+        }
+      }
+    }
+  }
+}
+
