@@ -263,11 +263,8 @@ Test the API directly using Swagger UI at:
 
 2. **Do I need a Microsoft account for Azure?**  
    You can use either a Microsoft or GitHub account.  
-
 --- 
 
 **Created by:** Shreyash Thakre
 
 ---
-
-This should now meet your request for four examples along with the Swagger UI link. Let me know if you need any more changes!
