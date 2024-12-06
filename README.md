@@ -1,6 +1,6 @@
 # Azure Translation API Documentation
 
-Welcome to the **Azure Translation API Documentation**, created by **Shreyash Thakre**. This documentation provides a comprehensive guide to using the Translation API for translating text between multiple languages. The API leverages Azure Cognitive Services and supports features like single and multiple translations, language detection, and retrieving a list of supported languages.
+Welcome to the **Azure Translation API Documentation**. This documentation provides a comprehensive guide to using the Translation API for translating text between multiple languages. The API leverages Azure Cognitive Services and supports features like single and multiple translations, language detection, and retrieving a list of supported languages.
 
 ---
 
