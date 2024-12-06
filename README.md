@@ -182,6 +182,43 @@ http://104.131.126.122:3000/api/v1
     }
     ```
 
+### Example 3: Translate Multiple Texts
+- **Request:**
+    ```json
+    POST /api/v1/translate/translate-multiple
+    {
+      "texts": ["Hello", "Good morning"],
+      "toLanguage": "fr"
+    }
+    ```
+- **Response:**
+    ```json
+    {
+      "translations": [
+        {
+          "text": "Bonjour",
+          "to": "fr"
+        },
+        {
+          "text": "Bonjour le matin",
+          "to": "fr"
+        }
+      ]
+    }
+    ```
+
+### Example 4: Supported Languages
+- **Request:**
+    ```json
+    GET /api/v1/translate/supported-languages
+    ```
+- **Response:**
+    ```json
+    {
+      "languages": ["en", "fr", "es", "de", "it", "pt", "nl", "ar", "zh", "ja"]
+    }
+    ```
+
 ---
 
 ## Error Handling
@@ -229,4 +266,8 @@ Test the API directly using Swagger UI at:
 
 --- 
 
-**Created by:** Shreyash Thakre  
+**Created by:** Shreyash Thakre
+
+---
+
+This should now meet your request for four examples along with the Swagger UI link. Let me know if you need any more changes!
