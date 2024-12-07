@@ -12,10 +12,9 @@ Welcome to the **Azure Translation API Documentation**. This documentation provi
 4. [Base URL](#base-url)  
 5. [Endpoints](#endpoints)  
 6. [Error Handling](#error-handling)  
-7. [Interactive API Testing (Swagger UI)](#interactive-api-testing-swagger-ui)  
-8. [Error Codes](#error-codes)  
-9. [FAQ](#faq)
-10. [Download PDF Documentation](#download-pdf-documentation)
+7. [Interactive API Testing (Swagger UI)](#interactive-api-testing-swagger-ui)   
+8. [FAQ](#faq)
+9. [Download PDF Documentation](#download-pdf-documentation)
 
 ---
 
@@ -161,14 +160,6 @@ http://104.131.126.122:3000/api/v1
 
 Test the API directly using Swagger UI at:  
 [http://104.131.126.122:3000/api-docs/](http://104.131.126.122:3000/api-docs/)
-
----
-
-## Error Codes
-
-- **400:** Bad Request
-- **401:** Unauthorized
-- **500:** Internal Server Error
 
 ---
 
