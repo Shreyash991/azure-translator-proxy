@@ -14,7 +14,8 @@ Welcome to the **Azure Translation API Documentation**. This documentation provi
 6. [Error Handling](#error-handling)  
 7. [Interactive API Testing (Swagger UI)](#interactive-api-testing-swagger-ui)  
 8. [Error Codes](#error-codes)  
-9. [FAQ](#faq)  
+9. [FAQ](#faq)
+10. [Download PDF Documentation](#download-pdf-documentation)
 
 ---
 
@@ -179,6 +180,15 @@ Test the API directly using Swagger UI at:
 2. **Do I need a Microsoft account for Azure?**  
    You can use either a Microsoft or GitHub account.  
 --- 
+
+## Download PDF Documentation
+
+For a more detailed explanation and additional examples, you can download the full PDF documentation here:
+
+[**Download PDF Documentation**](./docs/Azure_Translation_Api_Doc.pdf)
+
+
+---
 
 **Created by:** Shreyash Thakre
 
